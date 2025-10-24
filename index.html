@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Evil Calculator </title>
+
+    <!-- Google Fonts for Retro Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* ====== Retro Diner Aesthetic ====== */
+        body {
+            background: linear-gradient(180deg, #fff8f2, #ffe3e3);
+            font-family: 'Poppins', sans-serif;
+            color: #3b1c1c;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('https://www.transparenttextures.com/patterns/polished-metal.png');
+        }
+
+        header {
+            padding: 30px;
+            background: linear-gradient(90deg, #ff99aa, #ffd9d9);
+            border-bottom: 6px double #fff;
+            box-shadow: 0 5px 15px rgba(255, 105, 135, 0.3);
+        }
+
+        header img {
+            width: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 0 10px #ffccd5;
+        }
+
+        h1 {
+            font-family: 'Monoton', cursive;
+            font-size: 3rem;
+            color: #ff4d6d;
+            text-shadow: 0 0 6px #ffa6b6, 0 0 12px #ffb3c1;
+            margin-top: 15px;
+        }
+
+        /* ====== Main Content ====== */
+        main {
+            padding: 40px;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        strong {
+            color: #007a7a;
+        }
+
+        /* ====== Bio Section ====== */
+        .bio {
+            background: #fdf6f0;
+            border: 2px solid #ffb3c1;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 40px;
+            box-shadow: 0 0 15px rgba(255, 105, 135, 0.2);
+        }
+
+        .bio h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.8rem;
+            color: #ff4d6d;
+        }
+
+        /* ====== Picture Styling ====== */
+        .feature-pic {
+            margin-top: 30px;
+            width: 280px;
+            border-radius: 20px;
+            border: 4px solid #00bfbf;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 191, 191, 0.3);
+        }
+
+        .feature-pic:hover {
+            transform: rotate(-2deg) scale(1.05);
+            box-shadow: 0 0 30px #00e0e0;
+        }
+
+        /* ====== Footer ====== */
+        footer {
+            background: linear-gradient(90deg, #00bfbf, #007a7a);
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 6px double #fff;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #ffe8ec;
+            text-decoration: none;
+            margin: 0 8px;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        /* ====== Retro Cursor + Hover Glow ====== */
+        body:hover {
+            cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur1034.cur'), auto;
+        }
+
+        h1:hover, .bio h2:hover {
+            text-shadow: 0 0 12px #ffccd5, 0 0 25px #ff4d6d;
+        }
+
+        /* Optional Neon Glow Animation on Hover */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #ff4d6d; }
+            50% { text-shadow: 0 0 15px #ff4d6d; }
+            100% { text-shadow: 0 0 5px #ff4d6d; }
+        }
+
+        h1:hover {
+            animation: glow 1s infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ====== Header Section ====== -->
+    <header>
+        <img src="logo.jpg" alt="The Evil Calculator Logo">
+        <h1>The Evil Calculator </h1>
+    </header>
+
+    <!-- ====== Main Content ====== -->
+    <main>
+        <p>
+            Welcome to <strong>The Evil Calculator</strong> — where math meets mischief!  
+            Inspired by the bright neon lights and checkerboard floors of retro diners, this project gives
+            classic math tools a playful 1950s twist. Grab a milkshake, tap a few buttons, and let chaos (and charm) do the rest.
+        </p>
+
+        <div class="bio">
+            <h2>About the Creator</h2>
+            <p>
+                Hi, I am <strong>Brianna Pressley</strong> — a web design student with a love for all things vintage and vibrant.  
+                I wanted to make a calculator that feels like it came straight out of a 1950s diner —  
+                a little loud, a little flashy, and full of personality.  
+                My goal is to mix fun design with playful interactivity.
+            </p>
+        </div>
+
+        <!-- ====== Image ====== -->
+        <img src="your-photo.jpg" alt="Picture of Brianna Pressley" class="feature-pic">
+
+        <p style="margin-top:25px; font-style: italic; color:#007a7a;">
+            “Don't take math too seriously — even calculators need a break.”
+        </p>
+    </main>
+
+    <!-- ====== Footer ====== -->
+    <footer>
+        <p>© All Rights Reserved 2012</p>
+        <p>
+            <a href="https://www.w3schools.com" target="_blank">Learn HTML</a> |
+            <a href="https://tympanus.net/codrops/2019/01/31/custom-cursor-effects/" target="_blank">Cursor Effects</a> |
+            <a href="https://github.com/" target="_blank">My GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+
