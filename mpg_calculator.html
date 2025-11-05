@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MPG Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    /* Use your website's theme */
+    body {
+      background: linear-gradient(180deg, #fff8f2, #ffe3e3);
+      font-family: 'Poppins', sans-serif;
+      color: #3b1c1c;
+      text-align: center;
+      padding-top: 120px;
+    }
+    .calculator {
+      background: white;
+      width: 260px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(255, 120, 160, 0.6);
+      border: 4px dashed #ffb3c6;
+      background-image: url('https://i.imgur.com/QEL8t7s.png');
+      background-size: 250%;
+      background-blend-mode: lighten;
+      position: relative;
+    }
+    .calculator::before {
+      content: "";
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      width: 110px;
+      height: 35px;
+      transform: translateX(-50%) rotate(-3deg);
+      background: url('https://i.imgur.com/tpQYxqD.png') center/cover no-repeat;
+      opacity: 0.9;
+    }
+    .calculator img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    .calculator input {
+      width: 80%;
+      padding: 5px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid #ffb3c6;
+    }
+    .calculator button {
+      padding: 8px 15px;
+      margin-top: 10px;
+      background: #ff99aa;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Pacifico', cursive;
+      color: white;
+      cursor: pointer;
+    }
+    .calculator button:hover {
+      background: #ff4d6d;
+    }
+    #result {
+      margin-top: 10px;
+      font-weight: bold;
+      font-family: 'Pacifico', cursive;
+      color: #ff4d6d;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calculator">
+  <img src="https://cdn-icons-png.flaticon.com/512/1048/1048317.png" alt="Gas Can">
+  <h3>Miles Per Gallon</h3>
+  <input id="milesTraveled" type="text" placeholder="Miles Traveled">
+  <input id="gallonsUsed" type="text" placeholder="Gallons Used">
+  <br>
+  <button onclick="calculateMPG()">Calculate</button>
+  <p id="result"></p>
+</div>
+
+<script>
+function calculateMPG() {
+  var miles = document.getElementById('milesTraveled').value;
+  var gallons = document.getElementById('gallonsUsed').value;
+  var mpg = miles / gallons;
+  document.getElementById('result').innerText = "Miles Per Gallon: " + mpg;
+}
+</script>
+
+</body>
+</html>

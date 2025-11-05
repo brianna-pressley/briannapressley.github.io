@@ -48,6 +48,26 @@ nav {
     text-shadow: 0 0 8px #fff;
 }
 
+/* ====== Retro Cursor + Hover Glow ====== */
+        body:hover {
+            cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur1034.cur'), auto;
+        }
+
+        h1:hover, .bio h2:hover {
+            text-shadow: 0 0 12px #ffccd5, 0 0 25px #ff4d6d;
+        }
+
+        /* Optional Neon Glow Animation on Hover */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #ff4d6d; }
+            50% { text-shadow: 0 0 15px #ff4d6d; }
+            100% { text-shadow: 0 0 5px #ff4d6d; }
+        }
+
+        h1:hover {
+            animation: glow 1s infinite;
+        }
+        
 /* ====== DROPDOWN MENU ====== */
 .dropdown {
     position: relative;
