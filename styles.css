@@ -189,18 +189,7 @@ footer {
 .tilt-left { transform: rotate(-6deg); }
 .tilt-right { transform: rotate(5deg); }
 
-/* Washi Tape */
-.polaroid::before {
-    content: "";
-    position: absolute;
-    top: -18px;
-    left: 50%;
-    width: 110px;
-    height: 35px;
-    transform: translateX(-50%) rotate(-3deg);
-    background: url("https://i.imgur.com/tpQYxqD.png") center/cover no-repeat;
-    opacity: 0.9;
-}
+
 
 /* Sticker */
 .polaroid::after {
