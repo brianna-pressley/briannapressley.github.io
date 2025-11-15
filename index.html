@@ -3,48 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Brianna's Retro Web Portfolio</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Retro Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Bebas+Neue&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <!-- Link CSS File -->
+    <!-- Link External CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- ================= NAV BAR ================= -->
-<nav>
-    <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="assignments.html">Assignments</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+    <!-- ====== NAVBAR ====== -->
+    <nav class="retro-navbar">
+        <ul class="nav-menu">
 
-        <li class="dropdown">
-            <a href="#">More ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+            <li><a href="index.html">Home</a></li>
 
-<header>
-    <h1 style="font-family:'Monoton'; font-size:3rem; color:#ff4d6d;">Welcome to Brianna's Website</h1>
-</header>
+            <li class="dropdown">
+                <a href="assignments.html">Assignments</a>
+                <ul class="dropdown-menu">
+                    <li><a href="mpg.html">MPG Calculator</a></li>
+                    <li><a href="assignment2.html">Assignment 2</a></li>
+                    <li><a href="assignment3.html">Assignment 3</a></li>
+                    <li><a href="assignment4.html">Assignment 4</a></li>
+                </ul>
+            </li>
 
-<main style="max-width:800px; margin:auto; padding:40px;">
-    <p>
-        This website is my personal project space for my Web Development class.  
-        Here you will find my coursework, projects, about me, and a fun retro-inspired gallery.
-    </p>
-</main>
+            <li><a href="gallery.html">Gallery</a></li>
 
-<footer style="margin-top:60px;">
-    <p>© All Rights Reserved 2012</p>
-</footer>
+            <li class="dropdown">
+                <a href="#">More ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- ====== HEADER SECTION ====== -->
+    <header class="page-header">
+        <h1>Welcome to Brianna's Website</h1>
+        <p class="page-subtitle">A retro diner–inspired portfolio for my Web Development class</p>
+    </header>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main class="content-area">
+        <h2>About This Site</h2>
+        <p>
+            This website is my personal project portfolio for my Web Development class.  
+            Here you will find assignments, class projects, my bio, and a fun retro-style gallery.
+            Every page follows the same diner-inspired aesthetic for a unified experience.
+        </p>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="retro-footer">
+        <p>© All Rights Reserved 2012</p>
+        <p>Created by Brianna Pressley</p>
+    </footer>
 
 </body>
 </html>

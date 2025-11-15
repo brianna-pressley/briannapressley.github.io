@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Brianna</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Bebas+Neue&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+<!-- ================= NAVIGATION ================= -->
 <nav>
     <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
@@ -24,31 +31,46 @@
     </ul>
 </nav>
 
-<h1 style="margin-top:40px; font-family:'Pacifico'; color:#ff4d6d;">Get in Touch</h1>
+<!-- =============== HEADER =============== -->
+<header>
+    <h1>Contact Me</h1>
+    <p class="subtitle">Let’s chat, collaborate, or connect!</p>
+</header>
 
-<p style="max-width:700px; margin:auto; padding:20px;">
-    Have a question, want to collaborate, or just want to say hello?
-    Fill out the form below & I’ll get back to you soon!
-</p>
+<!-- =============== CONTACT FORM =============== -->
+<main style="max-width:700px; margin:auto; padding:30px;">
 
-<!--  Contact Form -->
-<form action="https://formspree.io/f/mrbonpoj" method="POST" style="max-width:600px; margin:auto; text-align:left; padding:30px; background:white; border-radius:15px; border:3px solid #ffb3c1;">
-    
-    <label>Your Name</label><br>
-    <input type="text" name="name" required style="width:100%; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #ffcbd5;"><br>
+    <p style="text-align:center; font-size:1.1rem;">
+        Have a question, want to collaborate, or just want to say hello?  
+        Fill out the form & I'll get back to you soon!
+    </p>
 
-    <label>Your Email</label><br>
-    <input type="email" name="email" required style="width:100%; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #ffcbd5;"><br>
+    <form action="https://formspree.io/f/mrbonpoj" method="POST"
+        style="background:white; border-radius:15px; padding:30px; 
+               border:3px solid #ff9fb2; margin-top:25px;">
 
-    <label>Your Message</label><br>
-    <textarea name="message" rows="5" required style="width:100%; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #ffcbd5;"></textarea><br>
+        <label>Your Name</label><br>
+        <input type="text" name="name" required
+               style="width:100%; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #ffcbd5;">
 
-    <button type="submit" style="background:#ff4d6d; border:none; padding:12px 25px; border-radius:8px; color:white; font-size:1rem; cursor:pointer; font-family:'Pacifico';">
-        Send Message ✉️
-    </button>
-</form>
+        <label>Your Email</label><br>
+        <input type="email" name="email" required
+               style="width:100%; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #ffcbd5;">
 
-<footer style="margin-top:60px;">
+        <label>Your Message</label><br>
+        <textarea name="message" rows="5" required
+                  style="width:100%; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #ffcbd5;"></textarea>
+
+        <button type="submit"
+                style="background:#ff4d6d; border:none; padding:12px 25px; border-radius:8px;
+                       color:white; font-size:1rem; cursor:pointer; font-family:'Pacifico'; margin-top:10px;">
+            Send Message ✉️
+        </button>
+    </form>
+</main>
+
+<!-- =============== FOOTER =============== -->
+<footer>
     <p>© All Rights Reserved 2025</p>
 </footer>
 

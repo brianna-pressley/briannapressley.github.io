@@ -1,38 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Assignments</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignments | Brianna's Retro Web Portfolio</title>
+
+    <!-- Retro Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Bebas+Neue&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Link External CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<nav>
-    <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="assignments.html">Assignments</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li class="dropdown">
-            <a href="#">More ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="retro-navbar">
+        <ul class="nav-menu">
 
-<h1 style="margin-top:40px;">Assignments</h1>
+            <li><a href="index.html">Home</a></li>
 
-<div style="max-width:800px; margin:auto; text-align:left; padding:40px;">
-    <h2>Assignment 1</h2>
-    <p>Description goes here...</p>
+            <li class="dropdown active">
+                <a href="assignments.html">Assignments</a>
+                <ul class="dropdown-menu">
+                    <li><a href="mpg.html">MPG Calculator</a></li>
+                    <li><a href="mortgage.html">Mortgage Calculator</a></li>
+                    <li><a href="assignment3.html">Assignment 3</a></li>
+                    <li><a href="assignment4.html">Assignment 4</a></li>
+                </ul>
+            </li>
 
-    <h2>Assignment 2</h2>
-    <p>Description goes here...</p>
+            <li><a href="gallery.html">Gallery</a></li>
 
-    <h2>Assignment 3</h2>
-    <p>Description goes here...</p>
-</div>
+            <li class="dropdown">
+                <a href="#">More ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- ================= HEADER ================= -->
+    <header class="page-header">
+        <h1>Class Assignments</h1>
+        <p class="page-subtitle">A showcase of my coursework for Web Development</p>
+    </header>
+
+    <!-- ================= ASSIGNMENTS LIST ================= -->
+    <main class="content-area">
+
+        <section class="assignment-block">
+            <h2>MPG Calculator</h2>
+            <p>A simple fuel efficiency calculator built using HTML, CSS, and JavaScript.</p>
+            <a class="retro-btn" href="mpg.html">View Assignment →</a>
+        </section>
+
+        <section class="assignment-block">
+            <h2>Mortgage Calculator</h2>
+            <p>This assignment uses formulas and input validation to calculate mortgage payments.</p>
+            <a class="retro-btn" href="mortgage.html">View Assignment →</a>
+        </section>
+
+        <section class="assignment-block">
+            <h2>Assignment 3</h2>
+            <p>Description for Assignment 3 will go here. (You can update later.)</p>
+            <a class="retro-btn" href="assignment3.html">View Assignment →</a>
+        </section>
+
+        <section class="assignment-block">
+            <h2>Assignment 4</h2>
+            <p>Description for Assignment 4 will go here. (You can update later.)</p>
+            <a class="retro-btn" href="assignment4.html">View Assignment →</a>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="retro-footer">
+        <p>© All Rights Reserved 2012</p>
+        <p>Created by Brianna Pressley</p>
+    </footer>
 
 </body>
 </html>
