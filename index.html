@@ -15,88 +15,87 @@
 
 <body>
 
-    <!-- ====== NAVBAR ====== -->
-    <nav class="retro-navbar">
-        <ul class="nav-menu">
+<!-- ====== NAVBAR ====== -->
+<nav class="retro-navbar">
+    <ul class="nav-menu">
 
-            <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
 
-            <li class="dropdown">
-                <a href="assignments.html">Assignments</a>
-                <ul class="dropdown-menu">
-                    <li><a href="mpg.html">MPG Calculator</a></li>
-                    <li><a href="mortgage.html">Mortgage Calculator</a></li>
-                    <li><a href="assignment3.html">Assignment 3</a></li>
-                    <li><a href="assignment4.html">Assignment 4</a></li>
-                </ul>
-            </li>
+        <li class="dropdown">
+            <a href="assignments.html">Assignments</a>
+            <ul class="dropdown-menu">
+                <li><a href="mpg_calculator.html">MPG Calculator</a></li>
+                <li><a href="mortgage.html">Mortgage Calculator</a></li>
+                <li><a href="assignment3.html">Assignment 3</a></li>
+                <li><a href="assignment4.html">Assignment 4</a></li>
+            </ul>
+        </li>
 
-            <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
 
-            <li class="dropdown">
-                <a href="#">More ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </li>
+        <li class="dropdown">
+            <a href="#">More ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </li>
 
-        </ul>
-    </nav>
+    </ul>
+</nav>
 
-    <!-- ====== HEADER SECTION ====== -->
-    <header class="page-header">
-        <h1>Welcome to Brianna's Website</h1>
-        <p class="page-subtitle">A retro diner–inspired portfolio for my Web Development class</p>
-    </header>
+<!-- ====== HEADER SECTION ====== -->
+<header class="page-header">
+    <h1>Welcome to Brianna's Website</h1>
+    <p class="page-subtitle">A retro diner–inspired portfolio for my Web Development class</p>
+</header>
 
-    <!-- ====== MAIN CONTENT ====== -->
-    <main class="content-area">
-        <h2>About This Site</h2>
-        <p>
-            This website is my personal project portfolio for my Web Development class.  
-            Here you will find assignments, class projects, my bio, and a fun retro-style gallery.
-            Every page follows the same diner-inspired aesthetic for a unified experience.
-        </p>
-    </main>
+<!-- ====== MAIN CONTENT ====== -->
+<main class="content-area">
+    <h2>About This Site</h2>
+    <p>
+        This website is my personal project portfolio for my Web Development class.  
+        Here you will find assignments, class projects, my bio, and a fun retro-style gallery.
+        Every page follows the same diner-inspired aesthetic for a unified experience.
+    </p>
+</main>
 
-    <!-- === Retro Neon Image Slider === -->
+<!-- ====== RETRO NEON IMAGE SLIDER ====== -->
 <div class="slider-container">
     <div class="slider">
 
         <div class="slide-wrapper">
-            <img class="slide" src="garden.png">
+            <img class="slide" src="images/garden.png" alt="Frog in botanical garden">
             <div class="caption">A picture of a frog at the botanical garden in Las Vegas.</div>
         </div>
 
         <div class="slide-wrapper">
-            <img class="slide" src="WWR.JPG">
+            <img class="slide" src="images/WWR.JPG" alt="White water rafting in NC">
             <div class="caption">This is me white water rafting in North Carolina.</div>
         </div>
 
         <div class="slide-wrapper">
-            <img class="slide" src="disney.png">
-            <div class="caption">My first time going to Disneyland./div>
+            <img class="slide" src="images/disney.png" alt="Disneyland trip">
+            <div class="caption">My first time going to Disneyland.</div>
         </div>
 
         <div class="slide-wrapper">
-            <img class="slide" src="images/pic4.jpg">
-            <div class="caption">Last</div>
+            <img class="slide" src="images/pic4.jpg" alt="Fourth image">
+            <div class="caption">Last slide here!</div>
         </div>
 
     </div>
 
-    <!-- Buttons -->
+    <!-- Slider Controls -->
     <button class="prev" onclick="changeSlide(-1)">❮</button>
     <button class="next" onclick="changeSlide(1)">❯</button>
 </div>
 
-
-    <script>
+<!-- ====== SLIDER SCRIPT ====== -->
+<script>
 let slideIndex = 0;
 let slides = document.getElementsByClassName("slide-wrapper");
 
-// Show first slide
 showSlide(slideIndex);
 
 function changeSlide(n) {
@@ -108,7 +107,6 @@ function showSlide(n) {
     if (n >= slides.length) { slideIndex = 0; }
     if (n < 0) { slideIndex = slides.length - 1; }
 
-    // Hide all slides
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -116,7 +114,6 @@ function showSlide(n) {
     slides[slideIndex].style.display = "block";
 }
 
-/* === AUTO PLAY EVERY 3 SECONDS === */
 setInterval(() => {
     slideIndex++;
     showSlide(slideIndex);
@@ -124,10 +121,10 @@ setInterval(() => {
 </script>
 
 <!-- ====== FOOTER ====== -->
-    <footer class="retro-footer">
-        <p>© All Rights Reserved 2012</p>
-        <p>Created by Brianna Pressley</p>
-    </footer>
+<footer class="retro-footer">
+    <p>© All Rights Reserved 2012</p>
+    <p>Created by Brianna Pressley</p>
+</footer>
 
 </body>
 </html>
