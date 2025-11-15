@@ -60,11 +60,74 @@
         </p>
     </main>
 
+    <!-- === Retro Neon Image Slider === -->
+<div class="slider-container">
+    <div class="slider">
+
+        <div class="slide-wrapper">
+            <img class="slide" src="garden.png">
+            <div class="caption">My first caption goes here ✨</div>
+        </div>
+
+        <div class="slide-wrapper">
+            <img class="slide" src="WWR.JPG">
+            <div class="caption">Second photo description 💖</div>
+        </div>
+
+        <div class="slide-wrapper">
+            <img class="slide" src="disney.png">
+            <div class="caption">Another moment captured 📸</div>
+        </div>
+
+        <div class="slide-wrapper">
+            <img class="slide" src="images/pic4.jpg">
+            <div class="caption">Last one! 🌈</div>
+        </div>
+
+    </div>
+
+    <!-- Buttons -->
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
+</div>
+
+
     <!-- ====== FOOTER ====== -->
     <footer class="retro-footer">
         <p>© All Rights Reserved 2012</p>
         <p>Created by Brianna Pressley</p>
     </footer>
+
+    <script>
+let slideIndex = 0;
+let slides = document.getElementsByClassName("slide-wrapper");
+
+// Show first slide
+showSlide(slideIndex);
+
+function changeSlide(n) {
+    slideIndex += n;
+    showSlide(slideIndex);
+}
+
+function showSlide(n) {
+    if (n >= slides.length) { slideIndex = 0; }
+    if (n < 0) { slideIndex = slides.length - 1; }
+
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex].style.display = "block";
+}
+
+/* === AUTO PLAY EVERY 3 SECONDS === */
+setInterval(() => {
+    slideIndex++;
+    showSlide(slideIndex);
+}, 3000);
+</script>
 
 </body>
 </html>
