@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Retro Invoice Calculator</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.invoice-box {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 4px dashed #ff4d6d;
+    box-shadow: 0 0 20px #ff4d6d;
+}
+
+.invoice-box h2 {
+    font-family: 'Lobster', cursive;
+    color: #ff4d6d;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #ffd6e0;
+}
+
+input {
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+}
+
+.total {
+    font-weight: bold;
+    color: #ff4d6d;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="assignments.html">Assignments</a></li>
+    </ul>
+</nav>
+
+<div class="invoice-box">
+    <h2>Retro Diner Invoice</h2>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>Burger</td>
+            <td>$5</td>
+            <td><input type="number" id="qty1" value="0"></td>
+            <td>$<span id="total1">0</span></td>
+        </tr>
+
+        <tr>
+            <td>Milkshake</td>
+            <td>$4</td>
+            <td><input type="number" id="qty2" value="0"></td>
+            <td>$<span id="total2">0</span></td>
+        </tr>
+
+        <tr>
+            <td>Fries</td>
+            <td>$3</td>
+            <td><input type="number" id="qty3" value="0"></td>
+            <td>$<span id="total3">0</span></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="total">Grand Total</td>
+            <td class="total">$<span id="grandTotal">0</span></td>
+        </tr>
+    </table>
+
+    <br>
+    <button onclick="calculateInvoice()">Calculate Total</button>
+</div>
+
+<script>
+function calculateInvoice() {
+    let price1 = 5;
+    let price2 = 4;
+    let price3 = 3;
+
+    let qty1 = document.getElementById("qty1").value;
+    let qty2 = document.getElementById("qty2").value;
+    let qty3 = document.getElementById("qty3").value;
+
+    let total1 = price1 * qty1;
+    let total2 = price2 * qty2;
+    let total3 = price3 * qty3;
+
+    document.getElementById("total1").innerText = total1;
+    document.getElementById("total2").innerText = total2;
+    document.getElementById("total3").innerText = total3;
+
+    let grandTotal = total1 + total2 + total3;
+    document.getElementById("grandTotal").innerText = grandTotal;
+}
+</script>
+
+</body>
+</html>
